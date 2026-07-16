@@ -1,0 +1,7 @@
+backend/node_modules
+frontend/ai-habit-tracker-ui-boilerplate-code/node_modules
+
+backend/.env
+frontend/ai-habit-tracker-ui-boilerplate-code/.env
+
+.DS_Store
