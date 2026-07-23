@@ -50,6 +50,13 @@ app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
 app.use(express.json({ limit: "1mb"}));
 
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "AI Habit Tracker Backend is running 🚀",
+  });
+});
+
 app.get("/api/health", (req, res) =>
     res.json({ status: "ok", time: new Date().toISOString() })
 );
